@@ -10,7 +10,7 @@
   <div class="container">
     <header>
       <h1>Contact Us</h1>
-      <p class="lead">Reach out to us for projects, support, or consultations.</p>
+      <p class="lead">Reach out for projects, support, or a quick consultation.</p>
       <nav>
         <a href="index.html">Home</a>
         <a href="services.html">Services</a>
@@ -22,22 +22,37 @@
     <section class="grid">
       <div class="card">
         <h3>Email</h3>
-        <p><a href="mailto:jaarsoodullachaa@gmail.com">Jarso Dulacha Dida</a></p>
+        <p><a href="mailto:jaarsoodullachaa@gmail.com">jaarsoodullachaa@gmail.com</a></p>
       </div>
 
       <div class="card">
-        <h3>Phone / WhatsApp</h3>
+        <h3>Phone</h3>
         <p><a href="tel:+251916435490">+251 916 435 490</a></p>
+        <p class="small">WhatsApp link (optional): <a href="https://wa.me/251916435490">wa.me/251916435490</a></p>
       </div>
     </section>
 
     <section class="card">
       <h2>Send us a quick message</h2>
+      <!-- Uses the visitor's email app (free, no backend needed) -->
       <form action="mailto:jaarsoodullachaa@gmail.com" method="post" enctype="text/plain">
-        <label>Your Name<br><input name="name" required></label><br><br>
-        <label>Your Email<br><input type="email" name="email" required></label><br><br>
-        <label>Message<br><textarea name="message" rows="6" required></textarea></label><br><br>
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
         <button class="btn" type="submit">Send</button>
+        <p class="notice">Note: this opens your email app to send the message. For a web form later, we can add a free service like Formspree.</p>
       </form>
     </section>
 
